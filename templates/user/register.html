@@ -1,0 +1,11 @@
+{% extends "base/base.html" %}
+{% block title %}Register{% endblock title %}
+{% block body %}
+<div class="container">
+    <h1 class="text-center">Register as</h1>
+    <div class="d-flex flex-row">
+        <a href="{% url 'accounts:sellerRegister' %}" class="btn btn-outline-primary" type="button">Register as a seller</a>
+        <a href="{% url 'accounts:customerRegister' %}" class="btn btn-outline-primary" type="button">Register as a customer</a>
+    </div>
+</div>
+{% endblock body %}

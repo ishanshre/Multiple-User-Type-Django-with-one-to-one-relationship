@@ -1,0 +1,1 @@
+# Multiple User type by extending custom user model with one to one relationship
