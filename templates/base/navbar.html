@@ -15,10 +15,11 @@
               {% if request.user.is_authenticated %}
               <li><a class="dropdown-item" href="#">My Profile</a></li>
               <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Logout</a></li>
+              <li><a class="dropdown-item" href="{% url 'accounts:logout' %}">Logout</a></li>
               {% else %}
               <li><a class="dropdown-item" href="{% url 'accounts:register' %}">Register</a></li>
-              <li><a class="dropdown-item" href="#">Login</a></li>
+              <li><a class="dropdown-item" href="{% url 'accounts:sellerportal' %}">Seller Portal</a></li>
+              <li><a class="dropdown-item" href="{% url 'accounts:index' %}">Customer Portal</a></li>
               {% endif %}
             </ul>
           </li>

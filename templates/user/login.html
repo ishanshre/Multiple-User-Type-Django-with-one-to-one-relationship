@@ -1,0 +1,9 @@
+{% extends "base/base.html" %}
+{% block title %}Seller Portal{% endblock title %}
+{% block body %}
+<div class="container">
+    <h1 class="text-center">Seller Login</h1>
+    <a href="{% url 'accounts:sellerportal' %}" class="btn btn-primary" type="button">Seller Portal</a>
+    <a href="{% url 'accounts:sellerportal' %}" class="btn btn-primary" type="button">Customer Portal</a>
+</div>
+{% endblock body %}
